@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
 
 		$.ajax({
 		  	type: 'POST',
-				url: '/ajax',
+				url: '/instagram/ajax',
 		  	data: {
 		  		source_url: $('input[name="source_url"]').val(),
 		  		action: 'get_download_link',
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
 
 		    $.ajax({
 				type: 'POST',
-				url: '/mail',
+				url: '/instagram/mail',
 				data: datastring,
 				cache: false,
 				success: function(response){

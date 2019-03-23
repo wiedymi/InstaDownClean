@@ -12,11 +12,11 @@
         <script src="/js/html5shiv.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" type="image/x-icon" href="/icon/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/css/libs.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css?v=5">
-    <link rel="stylesheet" type="text/css" href="/css/media.css?v=2">
-    <link rel="stylesheet" type="text/css" href="/css/icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/instagram/icon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/instagram/css/libs.css">
+    <link rel="stylesheet" type="text/css" href="/instagram/css/style.css?v=5">
+    <link rel="stylesheet" type="text/css" href="/instagram//css/media.css?v=2">
+    <link rel="stylesheet" type="text/css" href="/instagram//css/icons.css">
 
 
 </head>
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row content">
                 <div class="logo_block">
-                    <a href="/"><h4>dowgram<span>.com</span></h4></a>
+                    <a href="/instagram/"><h4>dowgram<span>.com</span></h4></a>
                 </div>
                 <div class="menu_block">
                     <i class="icon-menu"></i>
@@ -58,10 +58,10 @@
     </div>  
   </section>
 
-  <script src="/js/libs.min.js"></script>
-  <script src="/js/jquery.fileDownload.js"></script>
-  <script src="/js/jquery.csbuttons.min.js"></script>
-  <script src="/js/script.js?v=10"></script>
+  <script src="/instagram/js/libs.min.js"></script>
+  <script src="/instagram/js/jquery.fileDownload.js"></script>
+  <script src="/instagram/js/jquery.csbuttons.min.js"></script>
+  <script src="/instagram/js/script.js?v=10"></script>
   
 </body>
 </html>
