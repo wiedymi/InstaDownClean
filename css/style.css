@@ -513,49 +513,6 @@ header .dropdown_menu p {
     display: none
 }
 
-@media only screen and (min-width:600px) {
-    .hidden_pc {
-        display: none!important;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    .hidden_mob {
-        display: none!important;
-    }
-    .form input {
-        width: 100%;
-        border: 1px solid #e8e8e8
-    }
-
-    .form button {
-        width: 100%;
-        margin-top: 10px;
-        position: relative
-    }
-
-    .form button,.form form,.form input,.mob_text {
-        display: block
-    }
-
-    .form button i {
-        position: absolute;
-        right: 15px;
-        top: 16px
-    }
-
-    .mob_text {
-        font-size: 18px;
-        color: #fff;
-        font-weight: 700;
-        padding-top: 2px
-    }
-    
-    header {
-        border-bottom: 1px solid #f4f4f4
-    }
-}
-
 .orange-button {
     width: 53px;
     line-height: 53px;
@@ -652,4 +609,221 @@ header .dropdown_menu p {
     padding: 10px;
     font-size: 16px;
     border-radius: 0
+}
+
+.user_info_block {
+    margin-top: 40px;
+}
+
+.user_img, .user_info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.user_img img {
+    width: 60px;
+    border-radius: 100%;
+}
+.user_info {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.stories_count {
+    margin-top: 5px;
+}
+.stories_block {
+    margin: 30px -10px 0;
+    font-size: 0;
+}
+.stories {
+    display: inline-block;
+    width: 50%;
+    padding: 0 10px;
+}
+.stories_time {
+    color: #bbb;
+    font-size: 15px;
+}
+.preview {
+    margin-top: 10px;    
+    display: block;
+}
+.preview img {
+    width: 100%;
+}
+.download_button {
+    display: block;
+    background: #4aac02;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 10px 0 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+.hidden {
+    display: none!important;
+}
+svg path,
+svg rect{
+  fill: #fff;
+}
+
+
+/***********lightbox***********/
+.lightbox-p {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999999999;
+}
+body.lightbox-view {
+    overflow: hidden;
+}
+body.lightbox-view .lightbox-p {
+    opacity: 1;
+    visibility: visible;
+}
+.lightbox-p .lightbox-bg {
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+.lightbox-p .lightbox {
+    text-align: center;
+    z-index: 12;
+    height: 100%;
+    display: table;
+}
+.lightbox-p .lightbox .lightbox-media-place {
+    vertical-align: middle;
+    display: table-cell;
+}
+.lightbox-p .lightbox .lightbox-media-place > div {
+    max-height: 100vh;
+}
+.lightbox-p .lightbox .lightbox-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 12;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    box-shadow: 0 0 10px #000;
+    line-height: 34px;
+    font-size: 25px;
+    text-align: center;
+
+    background-image: url('../img/cancel-music.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lightbox-p .lightbox .lightbox-close span {
+    position: relative;
+    right: -0.7px;
+    top: 1px;
+}
+.lightbox-p .lightbox img {
+    max-width: 100%;
+    max-height: 100vh;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+.lightbox-p .lightbox video {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+}
+/***********lightbox***********/
+
+.icon-search-button {
+    background: url(../img/search.svg);
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.icon-download {
+    background: url(../img/download.svg);
+    display: block;
+    width: 18px;
+    height: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 25px;
+}
+
+@media only screen and (min-width:600px) {
+    .hidden_pc {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .hidden_mob {
+        display: none!important;
+    }
+    .form input {
+        width: 100%;
+        border: 1px solid #e8e8e8
+    }
+
+    .form button {
+        width: 100%;
+        margin-top: 10px;
+        position: relative
+    }
+
+    .form button,.form form,.form input,.mob_text {
+        display: block
+    }
+
+    .form button i {
+        position: absolute;
+        right: 15px;
+        top: 16px
+    }
+
+    .mob_text {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 700;
+        padding-top: 3px
+    }
+    .stories {
+        width: 100%;    
+        margin-bottom: 20px;
+    }
+    header {
+        border-bottom: 1px solid #f4f4f4;
+    }
+    header .dropdown_menu .menu_list {
+        justify-content: center;    
+        margin-top: 10px;
+    }
+    header .dropdown_menu .copyright {
+        text-align: center;
+        margin-top: 0;
+    }
 }
